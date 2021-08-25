@@ -22,7 +22,18 @@
      * eles devem ser uma string com o nome da tag, um componente ou fragmento
      * React. Eles são opcionais.
      */
-    return React.createElement('h1', { id: 'heading' }, 'Hello World!')
+    const type = 'h1'
+    const props = {
+      id: 'heading',
+      className: 'heading'
+    }
+    const child = 'Hello World!'
+
+    return React.createElement(
+      type,
+      props,
+      child
+    )
   }
 
   /**
