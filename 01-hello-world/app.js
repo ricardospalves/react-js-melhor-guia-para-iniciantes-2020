@@ -25,6 +25,9 @@
     const type = 'h1'
     const props = {
       id: 'heading',
+      // IMPORTANT: para evitar conflitos com a palavra reservada class do
+      // JavaScript, para adicionar o atributo class do HTML, é necessário
+      // passar a chave como className.
       className: 'heading'
     }
     const child = 'Hello World!'
