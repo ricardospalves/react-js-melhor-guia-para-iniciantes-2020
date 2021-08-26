@@ -76,7 +76,7 @@
         // como argumento, e essa função é quem captura a informação propagada
         // através do seu parâmetro. O parâmetro dessa função precisa ser o nome
         // da informação que se quer capturar, no meu caso o nome é name. Que é
-        // o nome que foi definido na criação do
+        // o nome que foi definido na criação do React.createContext.
         name => (
           React.createElement(`div`, { className: 'component-4' },
             // E finamente aqui eu consigo pegar o valor da informação que foi
