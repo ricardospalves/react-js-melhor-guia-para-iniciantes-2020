@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "composition": "npx babel 03-passando-dados-de-cima-para-baixo\\03-composition\\app.js -o 03-passando-dados-de-cima-para-baixo\\03-composition\\dist.js",
-    "state": "npx babel 04-react-hooks-useState\\app.js -o 04-react-hooks-useState\\dist.js"
+    "state": "npx babel 04-react-hooks-useState\\app.js -o 04-react-hooks-useState\\dist.js",
+    "lifiting-state-up": "npx babel 05-lifting-state-up\\app.js -o 05-lifting-state-up\\dist.js"
   },
   "repository": {
     "type": "git",
