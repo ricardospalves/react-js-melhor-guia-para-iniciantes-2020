@@ -4,7 +4,7 @@
   "description": "[Videoaula sobre React](https://www.youtube.com/watch?v=Ws9WVHhNq5M&list=PLbA-jMwv0cuVargCxiELSRWKEmQsnKURp&index=2) para iniciantes do canal [Programador a Bordo](https://www.youtube.com/channel/UC5fWvbBnaFAi2hJlHRmg5kw).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "composition": "npx babel 03-passando-dados-de-cima-para-baixo\\03-composition\\app.js -o 03-passando-dados-de-cima-para-baixo\\03-composition\\dist.js"
   },
   "repository": {
     "type": "git",
