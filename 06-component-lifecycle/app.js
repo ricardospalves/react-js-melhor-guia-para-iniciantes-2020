@@ -52,6 +52,21 @@
   }
 
   function AsideChildComponent(props) {
+    /**
+     * O hook useEffect é disparado toda vez que o componente sofre uma
+     * modificação.
+     *
+     * No meu caso, sempre que o botão de incrementar o contador é clicado, ele
+     * modifica o estado do counter, esse counter é recebido pelo
+     * AsideChildComponent via props, portanto, sempre que o estado counter é
+     * alterado, o componente AsideChildComponent é atualizado. E é aí que o
+     * hook userEffect entra. Esse hook permite que nós detectemos a mudança no
+     * componente e então realizar alguma ação.
+     *
+     * No meu caso, sempre que o componente for atualizado, eu quero
+     * que o novo valor do counter seja armazenado localmente na máquina do
+     * usuário.
+     */
     React.useEffect(() => {
       localStorage.setItem('counter', props.counter)
     })
@@ -64,7 +79,17 @@
   }
 
   function App() {
+    /**
+     * Aqui eu estou apenas pegando o contador armazenado localmente na máquina
+     * do usuário.
+     */
     const _localCounter = parseInt(localStorage.getItem('counter'), 10)
+
+    /**
+     * Aqui estou fazendo com que, caso exista um contador armazenado
+     * localmente, então o estado counter começa a partir desse contador local,
+     * se não, começa do zero.
+     */
     const [counter, incrementCounter] = React.useState(_localCounter || 0)
 
     const increment = () => {
