@@ -4,9 +4,9 @@
   /**
    * O Lifting State Up é uma técnica onde o estado da aplicação é definida no
    * elemento de mais alto nível e comum a todos que irão precisar acessar esse
-   * estado. Com essa técnica é possível é possível propagar a informação para
-   * componentes mais internos, externos e até mesmo componentes adjacentes,
-   * desde que todos estejam dentro do componente que cria os estados.
+   * estado. Com essa técnica, o componente de mais alto nível e que possui os
+   * estados da aplicação consegue propagar o estado para todos os seus filhos,
+   * netos, bisnetos e assim por diante.
    *
    * No meu caso eu quero que, quando um botão do Component4 seja clicado, o
    * texto exibido no AsideChildComponent seja atualizado.
