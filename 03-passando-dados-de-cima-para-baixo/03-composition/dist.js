@@ -88,5 +88,5 @@
     }, /*#__PURE__*/React.createElement(Component1, null));
   }
 
-  ReactDOM.render( /*#__PURE__*/React.createElement(MainComponent, null), window.root);
+  ReactDOM.render( /*#__PURE__*/React.createElement(MainComponent, null), document.querySelector('#root'));
 })();

@@ -78,6 +78,6 @@
 
   ReactDOM.render(
     React.createElement(MainComponent),
-    window.root
+    document.querySelector('#root')
   )
 })()

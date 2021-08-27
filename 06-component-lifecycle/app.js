@@ -106,6 +106,6 @@
 
   ReactDOM.render(
     <App />,
-    window.root
+    document.querySelector('#root')
   )
 })()

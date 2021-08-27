@@ -92,6 +92,6 @@
 
   ReactDOM.render(
     <MainComponent />,
-    window.root
+    document.querySelector('#root')
   )
 })()
